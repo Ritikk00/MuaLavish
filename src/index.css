@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Outfit", "Inter", sans-serif;
+  
+  --color-brand-gold: #D4AF37;
+  --color-brand-gold-dark: #B38F1D;
+  --color-brand-rose: #B76E79; /* Rose Gold */
+  --color-brand-blush: #FCEDED; /* Soft Blush Pink */
+  --color-brand-blush-light: #FFF5F5;
+  --color-brand-nude: #FAF7F5; /* Ivory White Base */
+  --color-brand-nude-dark: #F3EAE8;
+  --color-brand-black: #1E120D;
+  --color-brand-charcoal: #2E1E17; /* Elegant Dark Brown Text */
+  --color-brand-charcoal-light: #3D2D26;
+  --color-brand-gray: #6E5C55;
+  --color-brand-gray-light: #D5C9C5;
+
+  --shadow-luxury: 0 10px 30px -10px rgba(46, 30, 23, 0.08);
+  --shadow-luxury-hover: 0 20px 40px -15px rgba(183, 110, 121, 0.18);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+    background-color: var(--color-brand-nude);
+    color: var(--color-brand-charcoal);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Custom utility for glassmorphism */
+.glass-effect {
+  background: rgba(250, 246, 245, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-brand-nude);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-blush);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-rose);
+}

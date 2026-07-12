@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Complete Portfolio | MUA Lavish</title>
+    <meta name="description" content="A refined showcase of luxury makeup transformations by MUA Lavish." />
+    <style>
+        :root {
+            --rose: #c96f88;
+            --charcoal: #2d2a2a;
+            --blush: #f7e8eb;
+            --sand: #f6efe7;
+            --text: #5f5959;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            color: var(--text);
+            background: linear-gradient(135deg, #fffafc 0%, var(--sand) 100%);
+        }
+
+        .page {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 48px 20px 72px;
+        }
+
+        .hero {
+            text-align: center;
+            max-width: 760px;
+            margin: 0 auto 28px;
+        }
+
+        .eyebrow {
+            display: inline-block;
+            margin-bottom: 12px;
+            letter-spacing: 0.32em;
+            text-transform: uppercase;
+            color: var(--rose);
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+
+        h1 {
+            margin: 0 0 12px;
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: clamp(2rem, 4vw, 2.8rem);
+            color: var(--charcoal);
+        }
+
+        .hero p {
+            margin: 0;
+            font-size: 1rem;
+            line-height: 1.75;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 24px;
+            margin-top: 36px;
+        }
+
+        .card {
+            overflow: hidden;
+            border-radius: 24px;
+            background: #fff;
+            box-shadow: 0 20px 48px rgba(45, 42, 42, 0.08);
+            border: 1px solid rgba(201, 111, 136, 0.15);
+        }
+
+        .card img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .card-content {
+            padding: 18px 18px 20px;
+        }
+
+        .card h2 {
+            margin: 0 0 8px;
+            font-size: 1.05rem;
+            color: var(--charcoal);
+            font-family: Georgia, "Times New Roman", serif;
+        }
+
+        .card p {
+            margin: 0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 900px) {
+            .grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 640px) {
+            .page {
+                padding: 32px 16px 56px;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            .card img {
+                height: 280px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="page">
+        <section class="hero">
+            <span class="eyebrow">Complete Portfolio</span>
+            <h1>Luxury Beauty Transformations, Crafted with Intention</h1>
+            <p>
+                Discover a curated selection of editorial-ready makeup looks, radiant bridal finishes,
+                and festive glam crafted to feel soft, sculpted, and timeless.
+            </p>
+        </section>
+
+        <section class="grid">
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?q=80&w=800"
+                    alt="Vibrant Haldi Glow" />
+                <div class="card-content">
+                    <h2>Vibrant Haldi Glow</h2>
+                    <p>Fresh dewy skin, peach lips, and luminous tones for a radiant ceremonial look.</p>
+                </div>
+            </article>
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1596704017254-9b121068fb31?q=80&w=800"
+                    alt="Colorful Mehndi Eye look" />
+                <div class="card-content">
+                    <h2>Colorful Mehndi Eye look</h2>
+                    <p>Soft shimmer and playful detailing designed to glow beautifully under festive light.</p>
+                </div>
+            </article>
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?q=80&w=800"
+                    alt="Elegant Cocktail Night Glam" />
+                <div class="card-content">
+                    <h2>Elegant Cocktail Night Glam</h2>
+                    <p>Smoky eyes and polished definition for a refined evening finish.</p>
+                </div>
+            </article>
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?q=80&w=800"
+                    alt="Sleek Reception Look" />
+                <div class="card-content">
+                    <h2>Sleek Reception Look</h2>
+                    <p>Bold contours and a sculpted finish made to shine in the spotlight.</p>
+                </div>
+            </article>
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1503236839356-620409a6919c?q=80&w=800"
+                    alt="High-Definition Editorial base" />
+                <div class="card-content">
+                    <h2>High-Definition Editorial base</h2>
+                    <p>Camera-ready skin with a smooth, luminous, zero-flashback finish.</p>
+                </div>
+            </article>
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=800"
+                    alt="Minimalist Pastel Haldi" />
+                <div class="card-content">
+                    <h2>Minimalist Pastel Haldi</h2>
+                    <p>Soft rose-gold tones and a barely-there finish for day-time elegance.</p>
+                </div>
+            </article>
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?q=80&w=800"
+                    alt="Traditional Mehndi Braids & Glow" />
+                <div class="card-content">
+                    <h2>Traditional Mehndi Braids & Glow</h2>
+                    <p>Warm blush, defined brows, and a timeless traditional styling finish.</p>
+                </div>
+            </article>
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1515688594390-b649af70d282?q=80&w=800"
+                    alt="Glamorous Evening Reception" />
+                <div class="card-content">
+                    <h2>Glamorous Evening Reception</h2>
+                    <p>Champagne shimmer and rich berry lips for understated evening drama.</p>
+                </div>
+            </article>
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=800"
+                    alt="Soft Bronze Bridal Glow" />
+                <div class="card-content">
+                    <h2>Soft Bronze Bridal Glow</h2>
+                    <p>Velvety skin with bronzed lids and a romantic rose-toned lip.</p>
+                </div>
+            </article>
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1487412912498-0447578fcca8?q=80&w=800"
+                    alt="Studio-Ready Satin Finish" />
+                <div class="card-content">
+                    <h2>Studio-Ready Satin Finish</h2>
+                    <p>Airbrushed complexion with sculpted cheekbones and luminous contouring.</p>
+                </div>
+            </article>
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=800"
+                    alt="Rich Jewel-Toned Festive Look" />
+                <div class="card-content">
+                    <h2>Rich Jewel-Toned Festive Look</h2>
+                    <p>Emerald shadow and glossy lips designed for bold festive glamour.</p>
+                </div>
+            </article>
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=800"
+                    alt="Opulent Evening Glam" />
+                <div class="card-content">
+                    <h2>Opulent Evening Glam</h2>
+                    <p>High-shine elegance with sculpted features and striking evening presence.</p>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>
